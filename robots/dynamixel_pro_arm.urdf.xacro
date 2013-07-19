@@ -186,7 +186,7 @@
     <child
       link="base3" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
       <xacro:joint2_limits/>
   </joint>
   <link
