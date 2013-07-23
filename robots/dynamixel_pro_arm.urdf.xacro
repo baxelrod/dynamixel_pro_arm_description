@@ -397,5 +397,35 @@
       <xacro:joint6_limits/>
   </joint>
 
+  <gazebo reference="joint1">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
+  <gazebo reference="joint2">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
+  <gazebo reference="joint3">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
+  <gazebo reference="joint4">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
+  <gazebo reference="joint5">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
+  <gazebo reference="joint6">
+    <provideFeedback>1</provideFeedback>
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+
 </robot>
 

@@ -6,6 +6,7 @@
   <xacro:macro name="joint1_limits">
     <limit effort="39.131" lower="${-M_PI * 1.5}" upper="${M_PI * 1.5}" velocity="2.5"/>
     <dynamics damping="${DAMPING}"/>
+
   </xacro:macro>
   
   <xacro:macro name="joint2_limits">
