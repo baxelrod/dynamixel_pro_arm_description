@@ -54,6 +54,11 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
         base1:
           Alpha: 1
           Show Axes: false
@@ -89,11 +94,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        map:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -103,7 +112,8 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 138; 138; 138
-    Fixed Frame: /map
+    Fixed Frame: base_link
+    Frame Rate: 30
   Name: root
   Tools:
     - Class: rviz/Interact
