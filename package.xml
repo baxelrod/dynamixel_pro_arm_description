@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>dynamixel_pro_arm_description</name>
-  <version>0.8.0</version>
+  <version>0.8.1</version>
   <description>The dynamixel_pro_arm_description package contains an URDF model of the dynamixel pro arm</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
