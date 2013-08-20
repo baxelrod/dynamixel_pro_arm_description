@@ -1,7 +1,7 @@
 device: /dev/ttyUSB0
 baudrate: 1000000
 
-publish_rate: 50 
+publish_rate: 100 
 publish_velocities: false 
 
 servos:

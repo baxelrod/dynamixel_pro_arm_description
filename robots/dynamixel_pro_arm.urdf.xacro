@@ -20,25 +20,6 @@
         iyz="3.15024410056529E-06"
         izz="0.00136401703077675" />
     </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base_link.STL" />
-      </geometry>
-      <xacro:black/>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base_link.STL" />
-      </geometry>
-    </collision>
   </link>
 
   <joint name="fixed" type="fixed">
@@ -48,7 +29,7 @@
 
 
   <link
-    name="base1">
+    name="link1">
     <inertial>
       <origin
         xyz="-0.114805862897713 0.000229931382325375 -5.78233606436738E-11"
@@ -69,7 +50,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base1.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link1.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -79,7 +60,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base1.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -92,12 +73,12 @@
     <parent
       link="base_link" />
     <child
-      link="base1" />
+      link="link1" />
     <axis
       xyz="0 0 0" />
   </joint>
   <link
-    name="base2">
+    name="link2">
     <inertial>
       <origin
         xyz="-0.0392335507073881 -7.81631318112763E-06 0.00531035516720127"
@@ -118,7 +99,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base2.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link2.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -128,7 +109,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base2.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -139,15 +120,15 @@
       xyz="0 0 0"
       rpy="0.000329950722368627 -3.91151844547536E-19 1.16573417585641E-15" />
     <parent
-      link="base1" />
+      link="link1" />
     <child
-      link="base2" />
+      link="link2" />
     <axis
       xyz="1 0 0" />
       <xacro:joint1_limits/>
   </joint>
   <link
-    name="base3">
+    name="link3">
     <inertial>
       <origin
         xyz="0.00111475519670734 -6.37938353531542E-09 0.00149332970653814"
@@ -168,7 +149,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base3.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link3.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -178,7 +159,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base3.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -189,15 +170,15 @@
       xyz="0 0 0"
       rpy="1.07672117749535E-15 -3.33077071782914E-16 ${joint2_yaw_adjust -0.448514927738314}" />
     <parent
-      link="base2" />
+      link="link2" />
     <child
-      link="base3" />
+      link="link3" />
     <axis
       xyz="0 0 1" />
       <xacro:joint2_limits/>
   </joint>
   <link
-    name="base4">
+    name="link4">
     <inertial>
       <origin
         xyz="0.131279891227293 -0.0125985356508307 -2.71295075982194E-05"
@@ -218,7 +199,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base4.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link4.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -228,7 +209,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base4.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -239,15 +220,15 @@
       xyz="0.034413384517151 0 0"
       rpy="3.05278468838634 -1.03419334727961E-16 -6.84174938925253E-15" />
     <parent
-      link="base3" />
+      link="link3" />
     <child
-      link="base4" />
+      link="link4" />
     <axis
       xyz="1 0 0" />
       <xacro:joint3_limits/>
   </joint>
   <link
-    name="base5">
+    name="link5">
     <inertial>
       <origin
         xyz="0.11195043483619 0.0298542772733156 0.000557516625313621"
@@ -268,7 +249,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base5.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link5.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -278,7 +259,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base5.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -289,15 +270,15 @@
       xyz="0.211586615482849 -0.0300004352331184 0"
       rpy="-1.80411241501588E-16 6.24500451351651E-17 ${joint4_yaw_adjust + -0.166489329587427}" />
     <parent
-      link="base4" />
+      link="link4" />
     <child
-      link="base5" />
+      link="link5" />
     <axis
       xyz="0 0 1" />
       <xacro:joint4_limits/>
   </joint>
   <link
-    name="base6">
+    name="link6">
     <inertial>
       <origin
         xyz="0.0237751764296409 1.29683182664708E-08 -0.00139396484289391"
@@ -318,7 +299,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base6.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link6.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -328,7 +309,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base6.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link6.STL" />
       </geometry>
     </collision>
   </link>
@@ -339,15 +320,15 @@
       xyz="0.191364480262547 0.0300000000000002 0"
       rpy="${joint5_roll_adjust + -0.486056396438146} -2.4980018054066E-16 2.38697950294409E-15" />
     <parent
-      link="base5" />
+      link="link5" />
     <child
-      link="base6" />
+      link="link6" />
     <axis
       xyz="1 0 0" />
       <xacro:joint5_limits/>
   </joint>
   <link
-    name="base7">
+    name="link7">
     <inertial>
       <origin
         xyz="0.0370221618406554 -0.000202467625949054 0.0017005635585484"
@@ -368,7 +349,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base7.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link7.STL" />
       </geometry>
       <xacro:black/>
     </visual>
@@ -378,7 +359,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dynamixel_pro_arm_description/meshes/base7.STL" />
+          filename="package://dynamixel_pro_arm_description/meshes/link7.STL" />
       </geometry>
     </collision>
   </link>
@@ -389,9 +370,9 @@
       xyz="0.0246355197374534 0 0"
       rpy="1.60982338570648E-15 1.16573417585641E-15 ${joint6_yaw_adjust + 0.621053840565577}" />
     <parent
-      link="base6" />
+      link="link6" />
     <child
-      link="base7" />
+      link="link7" />
     <axis
       xyz="0 0 1" />
       <xacro:joint6_limits/>
@@ -427,5 +408,6 @@
     <cfmDamping>1</cfmDamping>
   </gazebo>
 
+  <xacro:include filename="$(find dynamixel_pro_arm_description)/urdf/gazebo.xacro" />
 </robot>
 
